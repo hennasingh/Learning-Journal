@@ -1,0 +1,37 @@
+body {
+    margin:0;
+}
+
+.main {
+    margin:auto;
+    width:500px;
+    padding:0.8em;
+}
+.site-title,
+ul {
+    display: flex;
+    gap: 1em;
+}
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+ul {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.logo {
+    object-fit: contain;
+}
+
+nav a {
+    text-decoration: none;
+    color:black
+}
