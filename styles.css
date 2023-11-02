@@ -40,7 +40,9 @@ nav a {
     text-decoration: none;
     color: black;
 }
-
+.aboutMe {
+    margin: 0 2em;
+}
 .article-featured {
     display: grid;
     grid-template-rows: 5em 3.125em auto 1fr 1em ;
@@ -100,4 +102,18 @@ h3 a {
     color: #D7D7D7;
     margin:0;
     font-size: 0.75rem;
+}
+
+/**
+ABOUT ME
+*/
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.recent-post-title {
+    text-align: center;
+    margin: 1em 0 0;
+    font-weight: 700;
 }
