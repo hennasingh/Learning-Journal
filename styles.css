@@ -18,27 +18,27 @@ html, body {
 }
 .site-title, ul {
     display: flex;
-    gap: 0.5em;
+    gap:0.5em;
 }
 
 .logo {
     object-fit: contain;
+    width:30px;
     margin-left: 1em;
- 
 }
 ul {
     list-style-type: none;
     text-transform: uppercase;
     align-self: end;
+    gap:1em;
 }
 
 nav {
     margin:auto;
 }
 
-nav a {
+.no-decor{
     text-decoration: none;
-    color: black;
 }
 .aboutMe {
     margin: 0 2em;
@@ -84,9 +84,13 @@ nav a {
     text-align: center;
   
 }
-h3 a {
+h3 a, 
+nav a {
     color: #000;
 }
+/**
+ FOOTER
+*/
 .footer {
     background-color: #202020;
     padding: 1em;
