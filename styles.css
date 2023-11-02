@@ -19,6 +19,7 @@ html, body {
 .site-title, ul {
     display: flex;
     gap:0.5em;
+    margin-right: 2em;
 }
 
 .logo {
@@ -34,7 +35,8 @@ ul {
 }
 
 nav {
-    margin:auto;
+    margin-left:auto;
+    align-self: center;
 }
 
 .no-decor{
@@ -48,6 +50,7 @@ nav {
     grid-template-rows: 5em 3.125em auto 1fr 1em ;
     grid-template-columns: 1em auto 1em;
     background-image: url("/images/article-featured.png");
+    background-size:cover;
     color: #fff;
     margin-bottom: 1em;
 }
@@ -120,4 +123,19 @@ ABOUT ME
     text-align: center;
     margin: 1em 0 0;
     font-weight: 700;
+}
+
+/**
+** MEDIA QUERIES
+*/
+
+@media (min-width: 576px) {
+    .recent-posts {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap: 1em;
+    }
+    .view-more {
+        grid-column: 1/-1;
+    }
 }
