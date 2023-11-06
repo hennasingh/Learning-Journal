@@ -6,12 +6,13 @@ html, body {
 }
 
 .container {
-    /* width: 100vh;
-    max-width: 900px; */
     margin: 0 auto;
     align-content: center;
 }
 
+/**
+* HEADER
+*/
 .header {
     display:flex;
     justify-content: space-between;
@@ -42,17 +43,26 @@ nav {
 .no-decor{
     text-decoration: none;
 }
-.aboutMe {
-    margin: 0 2em;
+
+/**
+* MAIN
+*/
+
+main {
+    margin: 0 auto;
+    max-width: 90%;
 }
+
 .article-featured {
     display: grid;
     grid-template-rows: 5em 3.125em auto 1fr 1em ;
     grid-template-columns: 1em auto 1em;
     background-image: url("/images/article-featured.png");
     background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .article-info {
@@ -74,7 +84,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding:1em;
+    margin:auto;
 }
 .article-image {
     width:100%;
@@ -90,6 +100,21 @@ nav {
 h3 a, 
 nav a {
     color: #000;
+}
+
+/**
+ABOUT ME
+*/
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.recent-post-title {
+    text-align: center;
+    margin: 1.5em 0 ;
+    font-weight: 700;
 }
 /**
  FOOTER
@@ -110,21 +135,6 @@ nav a {
     margin:0;
     font-size: 0.75rem;
 }
-
-/**
-ABOUT ME
-*/
-.avatar {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
-.recent-post-title {
-    text-align: center;
-    margin: 1em 0 0;
-    font-weight: 700;
-}
-
 /**
 ** MEDIA QUERIES
 */
@@ -137,5 +147,35 @@ ABOUT ME
     }
     .view-more {
         grid-column: 1/-1;
+    }
+    .main {
+        width:80%;
+        max-width: 900px;
+    }
+    .about-me, 
+    .article-intro {
+        width: 80%;
+        margin: auto;
+    }
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 1.5em;
+        width: 80%;
+        margin-bottom: 3em;
+    }
+    .avatar {
+        grid-row:1/-1;
+        justify-self: center;
+        align-self: center;
+    }
+    .intro h1,
+    .intro p {
+        margin:0;
+        padding: 0;
+    }
+    .intro h1 {
+        align-self: end;
     }
 }
