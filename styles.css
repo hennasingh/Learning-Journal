@@ -139,7 +139,7 @@ ABOUT ME
 ** MEDIA QUERIES
 */
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .recent-posts {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr ;
@@ -168,7 +168,7 @@ ABOUT ME
     .avatar {
         grid-row:1/-1;
         justify-self: center;
-        align-self: center;
+        align-self: end;
     }
     .intro h1,
     .intro p {
